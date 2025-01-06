@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9", "Lesson9.csproj", "{8C6872A9-A515-4605-9CF4-79460C9499F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9task2", "..\Lesson9task2\Lesson9task2.csproj", "{CA2128BE-CDB8-420B-951E-3B168A9A02D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson9task3", "..\Lesson9task3\Lesson9task3.csproj", "{B6C739D9-1D84-4C3E-A9BA-DC7B37A9687D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8C6872A9-A515-4605-9CF4-79460C9499F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6872A9-A515-4605-9CF4-79460C9499F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6872A9-A515-4605-9CF4-79460C9499F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA2128BE-CDB8-420B-951E-3B168A9A02D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2128BE-CDB8-420B-951E-3B168A9A02D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2128BE-CDB8-420B-951E-3B168A9A02D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2128BE-CDB8-420B-951E-3B168A9A02D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C739D9-1D84-4C3E-A9BA-DC7B37A9687D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C739D9-1D84-4C3E-A9BA-DC7B37A9687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C739D9-1D84-4C3E-A9BA-DC7B37A9687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C739D9-1D84-4C3E-A9BA-DC7B37A9687D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
