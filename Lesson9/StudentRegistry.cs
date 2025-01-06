@@ -40,3 +40,4 @@ internal static class StudentRegistry
         ShowInfo(youngestStudent);
     }
 }
+
