@@ -1,4 +1,5 @@
 ﻿namespace Lesson9;
+
 internal class Student
 {
     private string _name;
