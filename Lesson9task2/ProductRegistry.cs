@@ -1,14 +1,15 @@
 ﻿namespace Lesson9task2;
+
 internal static class ProductRegistry
 {
-    public static Dictionary<string, double> productDictionary = new Dictionary<string, double>();   
-    
+    public static Dictionary<string, double> productDictionary = new Dictionary<string, double>();
+
     public static void ShowProducts()
     {
         Console.WriteLine("List of products: ");
         foreach (var product in productDictionary)
         {
-            Console.WriteLine($"Product name: {product.Key}, price: {product.Value}");
+            Console.WriteLine($"Product name: {product.Key}, price: {Math.Round(product.Value,2)}");
         }
     }
 
@@ -17,7 +18,7 @@ internal static class ProductRegistry
         Console.WriteLine("Increase product prices by 10%:");
         foreach (var product in productDictionary)
         {
-            productDictionary[product.Key] = product.Value*1.1;
+            productDictionary[product.Key] = product.Value * 1.1;
         }
     }
 
@@ -31,14 +32,18 @@ internal static class ProductRegistry
             productNameToSearch = Console.ReadLine();
             IsEmpty = string.IsNullOrWhiteSpace(productNameToSearch);
         }
-        var isExists = ProductRegistry.productDictionary.TryGetValue(productNameToSearch, out double productPrice);
-        if (isExists)
+        var isFound = false;
+        foreach (var product in productDictionary)
         {
-            Console.WriteLine($"Product name to search: {productNameToSearch}, product price: {productPrice}");
+            if (product.Key.ToLower() == productNameToSearch)
+            {
+                Console.WriteLine($"Product name to search: {product.Key}, product price: {Math.Round(product.Value, 2)}");
+                isFound = true;
+            }
         }
-        else
+        if (isFound == false)
         {
-            Console.WriteLine("Product not found");
+            Console.WriteLine($"Product «{productNameToSearch}» not found");
         }
     }
 }
